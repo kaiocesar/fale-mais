@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: TelzirApp
+        psr4_prefix: TelzirApp
+        src_path: app
