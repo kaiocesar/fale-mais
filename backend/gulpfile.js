@@ -13,4 +13,11 @@ var elixir = require('laravel-elixir');
 
 elixir(function(mix) {
     mix.sass('app.scss');
+
+    mix.scripts([
+        'main.js',
+        'PlanosController.js'
+    ],'public/assets/js/all.js');
+
 });
+

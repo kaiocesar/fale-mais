@@ -98,4 +98,27 @@ class PlanosService
 
     }
 
+    public function getDDD()
+    {
+        $areas = DB::table('areas')
+            ->select('areas.code as CodeArea', 'areas.id as CdArea')
+            ->where('areas.status', 1)
+            ->get();
+
+        return $areas;
+
+    }
+
+    public function getPlans()
+    {
+        $plans = DB::table('plans')
+            ->select('plans.name as PlanName', 'plans.id PlanCode')
+            ->where('plans.status', 1)
+            ->get();
+
+        return $plans;
+
+    }
+
+
 }

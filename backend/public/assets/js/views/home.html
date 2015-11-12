@@ -1,0 +1,40 @@
+<div class="container">
+    <form class="form" action="">
+        <div class="row">
+
+            <div class="form-group col-md-2">
+                <label for="">Plano<br/></label>
+                <select class="form-control input-lg" name="" ng-model="Plans">
+                    <option value="0"></option>
+                    <option value="{{plan.PlanCode}}" ng-repeat="plan in plans"> {{plano.PlanName}}</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-2">
+                <label for="">DDD Origem<br/></label>
+                <select class="form-control input-lg" name="" ng-model="DDDOrigem">
+                    <option value="0"></option>
+                    <option value="{{ddd.CdArea}}" ng-repeat="ddd in ddds"> {{ddd.CodeArea}}</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-2">
+                <label for="">DDD Destino</label>
+                <select class="form-control input-lg" name="" ng-model="DDDDestino">
+                    <option value="0"></option>
+                    <option value="{{ddd.CdArea}}" ng-repeat="ddd in ddds"> {{ddd.CodeArea}}</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-2">
+                <label for="">Minutos</label>
+                <input class="form-control input-lg" type="text" ng-model="Minutes"/>
+            </div>
+
+            <div class="form-group col-md-2" style="margin-top:23px;">
+                <button type="button" ng-click="getRate()" class="btn btn-primary btn-lg">Consultar</button>
+            </div>
+
+        </div><!-- .row -->
+    </form>
+</div><!-- .container -->

@@ -17,3 +17,8 @@ Route::get('/', function () {
 
 
 Route::post('/get_consumption', 'APIController@getConsumption');
+
+Route::get('/getDDD', 'APIController@getDDD');
+
+Route::get('/getPlans', 'APIController@getPlans');
+

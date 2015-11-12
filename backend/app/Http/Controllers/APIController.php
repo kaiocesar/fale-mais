@@ -22,7 +22,10 @@ class APIController extends Controller
         return $this->servicePlan->getConsumption($data);
     }
 
-
+    public function getDDD()
+    {
+        return $this->servicePlan->getDDD();
+    }
 
 
 }
