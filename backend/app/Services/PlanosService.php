@@ -112,7 +112,7 @@ class PlanosService
     public function getPlans()
     {
         $plans = DB::table('plans')
-            ->select('plans.name as PlanName', 'plans.id PlanCode')
+            ->select('plans.name as PlanName', 'plans.id as PlanCode')
             ->where('plans.status', 1)
             ->get();
 

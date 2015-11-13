@@ -23,7 +23,7 @@ angular.module('planos')
         });
 
     $scope.add = function(){
-        alert('roll dom');
+        alert('');
     };
 
 

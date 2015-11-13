@@ -27,5 +27,10 @@ class APIController extends Controller
         return $this->servicePlan->getDDD();
     }
 
+    public function getPlans()
+    {
+        return $this->servicePlan->getPlans();
+    }
+
 
 }

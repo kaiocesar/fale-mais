@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Entities;
+namespace TelzirApp\Entities;
 
 use Illuminate\Database\Eloquent\Model;
 use Prettus\Repository\Contracts\Transformable;
@@ -10,6 +10,12 @@ class Planos extends Model implements Transformable
 {
     use TransformableTrait;
 
-    protected $fillable = [];
+    protected $fillable = [
+        'id',
+        'name',
+        'description',
+        'photography',
+        'status'
+    ];
 
 }
