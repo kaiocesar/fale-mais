@@ -10,8 +10,8 @@ angular.module('planos')
             $scope.ddds = data;
         });
 
-    $scope.add = function(){
-        alert('');
+    $scope.getRate = function(){
+        alert($scope.Minutes);
     };
 
 
