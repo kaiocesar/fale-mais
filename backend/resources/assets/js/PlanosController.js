@@ -11,7 +11,22 @@ angular.module('planos')
         });
 
     $scope.getRate = function(){
-        alert($scope.Minutes);
+        var data = {
+            ddd_origin: $scope.DDDOrigem,
+            ddd_receiver: $scope.DDDDestino,
+            minutes: $scope.Minutes,
+            plan: $scope.Plans
+        };
+
+        $http({
+            method: 'POST',
+            url: '/getConsumption',
+            data: data
+        }).then(function success(data){
+            alert(data);
+        }, function error(data){
+            alert(data);
+        });
     };
 
 
